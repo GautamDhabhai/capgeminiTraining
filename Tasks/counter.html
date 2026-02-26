@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>counter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+        </style>
+    </head>
+    <body>
+            <div>
+                <h1 id="cnt">0</h1>
+            </div>
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <button id="reset">RESET</button>
+        
+        <script>
+            let cnt = document.getElementById("cnt");
+            let plus = document.getElementById("plus");
+            let minus = document.getElementById("minus");
+            let reset = document.getElementById("reset");
+            let count = 0;
+            plus.addEventListener("click", ()=> {
+                count++;
+                cnt.textContent = count;
+            })
+            minus.addEventListener("click", ()=> {
+                count--;
+                cnt.textContent = count;
+            })
+            reset.addEventListener("click", ()=> {
+                count = 0;
+                cnt.textContent = count;
+            })
+
+        </script>
+    </body>
+</html>

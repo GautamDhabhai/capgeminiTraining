@@ -1,0 +1,52 @@
+ *{
+    padding: 10px;
+}
+
+body{
+ height: 300vh; 
+ /* background-image: url("./foggy-city.jpg");
+ background-position: bottom;
+ background-size: cover; */
+}
+h1 + h1{
+    background: linear-gradient(280deg, blue, green);
+}
+
+h1::after{
+    content: " 🍔";
+}
+
+h2{
+    background: linear-gradient(280deg, rgb(108, 4, 90), rgb(0, 170, 255));
+    background-image: url("./kidjo.jpg");
+    background-position: center;
+    color: royalblue;
+
+}
+
+
+#box1{
+    background-color: red;
+    width: 30vh;
+    padding: 12px;
+    /* float: left;
+    margin-left: 20px; */
+    
+}
+
+#cont{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    top: 10px;
+    left: 1000px;
+}
+
+/* #child{
+    background-color: bisque;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+

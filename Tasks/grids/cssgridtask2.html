@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .parent{
+                height: 90vh;
+                width: 70vh;
+                background-color: rgb(39, 73, 5);
+                border: 2px solid rgb(219, 0, 0);
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+            }
+
+            .child{
+                background-color: limegreen;
+                margin: 5px;
+                border: 1px solid white;
+            }
+
+            .c1{
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+
+            .c2{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .c3{
+                grid-column-start: 4;
+                grid-column-end: 5;
+            }
+            .c4{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            .c5{
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+            .c6{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .c7{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .c8{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .c9{
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+            .c10{
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 4;
+                grid-column-end: 5;
+            }
+            .c11{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 5;
+                grid-row-end: 7;
+            }
+            .c12{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .c13{
+                grid-column-start: 4;
+                grid-column-end: 5;
+            }
+            .c14{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            .c15{
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+            .c16{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .c17{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child c1">1</div>
+            <div class="child c2">2</div>
+            <div class="child c3">3</div>
+            <div class="child c4">4</div>
+            <div class="child c5">5</div>
+            <div class="child c6">6</div>
+            <div class="child c7">7</div>
+            <div class="child c8">8</div>
+            <div class="child c9">9</div>
+            <div class="child c10">10</div>
+            <div class="child c11">11</div>
+            <div class="child c12">12</div>
+            <div class="child c13">13</div>
+            <div class="child c14">14</div>
+            <div class="child c15">15</div>
+            <div class="child c16">16</div>
+            <div class="child c17">17</div>
+            <div class="child c18">18</div>
+        </div>
+    </body>
+</html>
