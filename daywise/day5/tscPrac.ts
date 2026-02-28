@@ -1,3 +1,4 @@
+export {}
 console.log("Hello World!");
 console.log("hey there");
 
@@ -121,7 +122,7 @@ const minus = (a: number, b: number): number => {
 console.log(`minus function -> ${minus(20, 10)}`); // Output: 10
 
 //arrow function with implicit return
-const arrowGreet = (nameVar) => `Hello ${nameVar}!`;
+const arrowGreet = (nameVar:string) => `Hello ${nameVar}!`;
 
 console.log(`arrowGreet function -> ${arrowGreet("JID")}`); // Output: Hello JID!
 
@@ -180,13 +181,13 @@ console.log(myDog); // Output: { name: "Buddy", age: 5, breed: "Golden Retriever
 interface car{
     brand: string;
     color: string,
-    sunroof?(): string; // This is an optional method that returns a string. The ? after the method name indicates that it is optional, meaning that objects of type 'car' may or may not have this method implemented.
+    sunroof(): string; // This is an optional method that returns a string. The ? after the method name indicates that it is optional, meaning that objects of type 'car' may or may not have this method implemented.
 }
 
-let myCar: car = {
+let myCar:  car = {
     brand: "bugatti",
     color: "red",
-    sunroof(){
+    sunroof():string{
         return "This car has a sunroof!";
     }
 }

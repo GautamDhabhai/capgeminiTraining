@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>THEME</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <center>
+            <button id="btn">THEME</button>
+        </center>
+        
+        <script>
+            let btn = document.getElementById("btn");
+            let dark = false;
+            btn.addEventListener("click", ()=> {
+                if(dark){
+                    document.body.style.backgroundColor="white";
+                    dark = false;
+                }
+                else{
+                    document.body.style.backgroundColor="black";
+                    dark = true;
+                }
+            })
+        </script>
+    </body>
+</html>

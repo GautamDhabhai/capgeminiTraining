@@ -1,0 +1,24 @@
+#Xpath
+    -absolute_path  (/)
+    -examples:
+        - /html/body/div[1]/section/div/form/button
+    -relative_path  (//)
+    -examples:
+        - //button[text()='Login']    (we can also use .)
+        - //input[@id='username']       (@ is used for attributes only)
+        - //div[@class='container']//p
+        - //*[@name='email' and @type='text']
+        - //*[@name='email' or @type='password']
+        - //input[contains(@id, 'user')]
+        - //button[starts-with(@class, 'btn')]
+        - //div[ends-with(@id, '_section')]
+        - //a[@href and @target='_blank']
+        - //*[not(@disabled)]
+        - //input[@type='text' and @required='true']
+        - //span[normalize-space()='Welcome']
+        - //tr[td[text()='Active']]
+        - //ul/li[position()=2]
+        - //div[@class='header']//span[@data-testid='title']
+        
+    //how to use in playwright
+    page.locator("//button[text()='Login']").click()
