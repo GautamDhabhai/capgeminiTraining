@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">prod-store</a>
+        </div>
+        <div class="nav-center">
+            <a href="mobiles.html" class="nav-link">Mobiles</a>
+            <a href="laptops.html" class="nav-link">Laptops</a>
+            <a href="watches.html" class="nav-link">Watches</a>
+        </div>
+        <div class="nav-right">
+            <a href="cart.html" class="nav-link cart-link">
+                Cart <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="page-title">Featured Products</h1>
+        
+        <div class="products-grid">
+            <!-- Mobiles -->
+            <div class="product-card">
+                <div class="product-image"><img src="https://www.apple.com/in/iphone-17-pro/images/overview/highlights/highlights_design_endframe__flnga0hibmeu_large.jpg" alt="iPhone 17"></div>
+                <div class="product-info">
+                    <div class="product-name">iPhone 17</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$999</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m1', 'iPhone 17', 'Mobiles', 999)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://img.global.news.samsung.com/global/wp-content/uploads/2026/02/26031538/Samsung-Mobile-Galaxy-Unpacked-2026-Galaxy-S26-Series-Launch_main1.jpg" alt="Samsung S24"></div>
+                <div class="product-info">
+                    <div class="product-name">Samsung S24</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$899</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m2', 'Samsung S24', 'Mobiles', 899)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Pixel+8" alt="Google Pixel 8"></div>
+                <div class="product-info">
+                    <div class="product-name">Google Pixel 8</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$799</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m3', 'Google Pixel 8', 'Mobiles', 799)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=OnePlus+12" alt="OnePlus 12"></div>
+                <div class="product-info">
+                    <div class="product-name">OnePlus 12</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$699</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m4', 'OnePlus 12', 'Mobiles', 699)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Xiaomi+14" alt="Xiaomi 14"></div>
+                <div class="product-info">
+                    <div class="product-name">Xiaomi 14</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$599</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m5', 'Xiaomi 14', 'Mobiles', 599)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Poco+X6" alt="Poco X6"></div>
+                <div class="product-info">
+                    <div class="product-name">Poco X6</div>
+                    <div class="product-category">Mobiles</div>
+                    <div class="product-price">$499</div>
+                    <button class="add-to-cart-btn" onclick="addItem('m6', 'Poco X6', 'Mobiles', 499)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Laptops -->
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=MacBook+Pro" alt="MacBook Pro"></div>
+                <div class="product-info">
+                    <div class="product-name">MacBook Pro</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1999</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l1', 'MacBook Pro', 'Laptops', 1999)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Dell+XPS" alt="Dell XPS 15"></div>
+                <div class="product-info">
+                    <div class="product-name">Dell XPS 15</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1799</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l2', 'Dell XPS 15', 'Laptops', 1799)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=HP+Pavilion" alt="HP Pavilion"></div>
+                <div class="product-info">
+                    <div class="product-name">HP Pavilion</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l3', 'HP Pavilion', 'Laptops', 1299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=ThinkPad" alt="Lenovo ThinkPad"></div>
+                <div class="product-info">
+                    <div class="product-name">Lenovo ThinkPad</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1499</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l4', 'Lenovo ThinkPad', 'Laptops', 1499)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=ASUS+VivoBook" alt="ASUS VivoBook"></div>
+                <div class="product-info">
+                    <div class="product-name">ASUS VivoBook</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$999</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l5', 'ASUS VivoBook', 'Laptops', 999)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Acer+Swift" alt="Acer Swift"></div>
+                <div class="product-info">
+                    <div class="product-name">Acer Swift</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$899</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l6', 'Acer Swift', 'Laptops', 899)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Watches -->
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Apple+Watch" alt="Apple Watch"></div>
+                <div class="product-info">
+                    <div class="product-name">Apple Watch</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$399</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w1', 'Apple Watch', 'Watches', 399)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Samsung+Watch" alt="Samsung Galaxy"></div>
+                <div class="product-info">
+                    <div class="product-name">Samsung Galaxy</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w2', 'Samsung Galaxy', 'Watches', 299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Fitbit+Sense" alt="Fitbit Sense"></div>
+                <div class="product-info">
+                    <div class="product-name">Fitbit Sense</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$249</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w3', 'Fitbit Sense', 'Watches', 249)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Garmin" alt="Garmin Forerunner"></div>
+                <div class="product-info">
+                    <div class="product-name">Garmin Forerunner</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w4', 'Garmin Forerunner', 'Watches', 299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Fossil+Gen6" alt="Fossil Gen 6"></div>
+                <div class="product-info">
+                    <div class="product-name">Fossil Gen 6</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$269</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w5', 'Fossil Gen 6', 'Watches', 269)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Realme+Watch" alt="Realme Watch"></div>
+                <div class="product-info">
+                    <div class="product-name">Realme Watch</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$149</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w6', 'Realme Watch', 'Watches', 149)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops - Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">prod-store</a>
+        </div>
+        <div class="nav-center">
+            <a href="mobiles.html" class="nav-link">Mobiles</a>
+            <a href="laptops.html" class="nav-link">Laptops</a>
+            <a href="watches.html" class="nav-link">Watches</a>
+        </div>
+        <div class="nav-right">
+            <a href="cart.html" class="nav-link cart-link">
+                Cart <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Products Grid -->
+    <div class="container">
+        <h2 class="page-title">Laptops</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=MacBook+Pro" alt="MacBook Pro"></div>
+                <div class="product-info">
+                    <div class="product-name">MacBook Pro</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1999</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l1', 'MacBook Pro', 'Laptops', 1999)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="" alt="Dell XPS 15"></div>
+                <div class="product-info">
+                    <div class="product-name">Dell XPS 15</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1799</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l2', 'Dell XPS 15', 'Laptops', 1799)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=HP+Pavilion" alt="HP Pavilion"></div>
+                <div class="product-info">
+                    <div class="product-name">HP Pavilion</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l3', 'HP Pavilion', 'Laptops', 1299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=ThinkPad" alt="Lenovo ThinkPad"></div>
+                <div class="product-info">
+                    <div class="product-name">Lenovo ThinkPad</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$1499</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l4', 'Lenovo ThinkPad', 'Laptops', 1499)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=ASUS+VivoBook" alt="ASUS VivoBook"></div>
+                <div class="product-info">
+                    <div class="product-name">ASUS VivoBook</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$999</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l5', 'ASUS VivoBook', 'Laptops', 999)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Acer+Swift" alt="Acer Swift"></div>
+                <div class="product-info">
+                    <div class="product-name">Acer Swift</div>
+                    <div class="product-category">Laptops</div>
+                    <div class="product-price">$899</div>
+                    <button class="add-to-cart-btn" onclick="addItem('l6', 'Acer Swift', 'Laptops', 899)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

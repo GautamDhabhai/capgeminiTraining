@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches - Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">prod-store</a>
+        </div>
+        <div class="nav-center">
+            <a href="mobiles.html" class="nav-link">Mobiles</a>
+            <a href="laptops.html" class="nav-link">Laptops</a>
+            <a href="watches.html" class="nav-link">Watches</a>
+        </div>
+        <div class="nav-right">
+            <a href="cart.html" class="nav-link cart-link">
+                Cart <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Products Grid -->
+    <div class="container">
+        <h2 class="page-title">Watches</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Apple+Watch" alt="Apple Watch"></div>
+                <div class="product-info">
+                    <div class="product-name">Apple Watch</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$399</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w1', 'Apple Watch', 'Watches', 399)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Samsung+Watch" alt="Samsung Galaxy"></div>
+                <div class="product-info">
+                    <div class="product-name">Samsung Galaxy</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w2', 'Samsung Galaxy', 'Watches', 299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Fitbit+Sense" alt="Fitbit Sense"></div>
+                <div class="product-info">
+                    <div class="product-name">Fitbit Sense</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$249</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w3', 'Fitbit Sense', 'Watches', 249)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Garmin" alt="Garmin Forerunner"></div>
+                <div class="product-info">
+                    <div class="product-name">Garmin Forerunner</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$299</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w4', 'Garmin Forerunner', 'Watches', 299)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Fossil+Gen6" alt="Fossil Gen 6"></div>
+                <div class="product-info">
+                    <div class="product-name">Fossil Gen 6</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$269</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w5', 'Fossil Gen 6', 'Watches', 269)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="https://via.placeholder.com/200?text=Realme+Watch" alt="Realme Watch"></div>
+                <div class="product-info">
+                    <div class="product-name">Realme Watch</div>
+                    <div class="product-category">Watches</div>
+                    <div class="product-price">$149</div>
+                    <button class="add-to-cart-btn" onclick="addItem('w6', 'Realme Watch', 'Watches', 149)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
