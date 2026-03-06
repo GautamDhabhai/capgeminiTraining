@@ -1,0 +1,47 @@
+// giving doulbe slash not preferable use child or descendant methods
+
+Child
+Selects direct child of a node
+Example: //div/child::span
+
+Parent
+Selects parent of the current node
+Example: //span/parent::div
+
+Descendant
+Selects any children, grandchildren etc
+Example: //div/descendant::span
+
+Ancestor
+Selects any parents, grandparents etc
+Example: //span/ancestor::div
+
+Following
+Selects all nodes after the current node
+Example: //h2/following::p
+
+Following-Sibling
+Selects siblings after current node
+Example: //h2/following-sibling::p
+
+Preceding
+Selects all nodes before current node
+Example: //p/preceding::h2
+
+Preceding-Sibling
+Selects siblings before current node
+Example: //p/preceding-sibling::h2
+
+-------------------------------------------------------
+
+SVG / Special Tags XPath
+
+Using name()
+Select element by tag name when namespace causes issues
+Example: //*[name()='svg']
+
+Selecting g tag
+Example: //*[name()='g']
+
+Selecting path inside svg
+Example: //*[name()='svg']//*[name()='path']
