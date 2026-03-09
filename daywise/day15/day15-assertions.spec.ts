@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test';
+import {test, expect} from '../../playwrightt/node_modules/@playwright/test'
 
 test("assertions, toHaveScreenshot", async({page})=> {
     await page.goto('https://practicetestautomation.com/practice-test-login/');
