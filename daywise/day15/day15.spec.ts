@@ -1,4 +1,4 @@
-import {test, expect} from '../../playwrightt/node_modules/@playwright/test'
+import {test} from '../../playwrightt/node_modules/@playwright/test'
 //import { expect } from '@playwright/test';
 
 test("getbytestId", async({page}) => {
