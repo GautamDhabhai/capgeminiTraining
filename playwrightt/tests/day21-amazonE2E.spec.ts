@@ -6,7 +6,7 @@ test("amazonE2E", async({page}) => {
     let amazon = new amazonE2E(page);
     await page.goto(jsonData.url);
     await amazon.searchProduct(jsonData.productName);
-    let page2 = await amazon.selectProduct();
+    let page2 = await amazon.selectProductRamFilter();
     await amazon.selectQuantity("3", page2);
     await amazon.addToCartFxn(page2);
 
