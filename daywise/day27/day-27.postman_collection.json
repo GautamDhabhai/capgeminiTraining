@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "c651e40b-d4cd-4c06-8c3c-89c7016c315e",
+    "name": "day-27",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37770457",
+    "_collection_link": "https://go.postman.co/collection/37770457-c651e40b-d4cd-4c06-8c3c-89c7016c315e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.collectionVariables.set(\"baseUrl\", \"https://www.shoppersstack.com/shopping\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"city\": \"string\",\r\n  \"country\": \"string\",\r\n  \"email\": \"gdfdfautam@gmail.com\",\r\n  \"firstName\": \"string\",\r\n  \"gender\": \"MALE\",\r\n  \"lastName\": \"string\",\r\n  \"password\": \"string\",\r\n  \"phone\": 9874453136,\r\n  \"state\": \"string\",\r\n  \"zoneId\": \"ALPHA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "/shoppers",
+          "path": [
+            "shoppers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}

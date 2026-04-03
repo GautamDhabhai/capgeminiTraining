@@ -1,0 +1,146 @@
+{
+  "info": {
+    "_postman_id": "1cf7dd90-67af-4b01-aed5-5b0577de80da",
+    "name": "day-26",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37770457",
+    "_collection_link": "https://go.postman.co/collection/37770457-1cf7dd90-67af-4b01-aed5-5b0577de80da?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "create pet",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.collectionVariables.set(\"baseUrl\", \"https://petstore3.swagger.io/api/v3\");\r",
+              "\r",
+              "pm.collectionVariables.set(\"id\", \"2\");\r",
+              "pm.collectionVariables.set(\"name\", \"kirk\");\r",
+              "\r",
+              "// pm.test(\"response code is 200\", function(){\r",
+              "//     pm.response.to.have.status(200);\r",
+              "// })\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": {{id}},\r\n    \"name\": \"woof!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/pet",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get pet 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore3.swagger.io/api/v3/pet/",
+          "protocol": "https",
+          "host": [
+            "petstore3",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "api",
+            "v3",
+            "pet",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete pet 2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://petstore3.swagger.io/api/v3/pet/2",
+          "protocol": "https",
+          "host": [
+            "petstore3",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "api",
+            "v3",
+            "pet",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update pet 2",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"id\": {{id}}\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/pet",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pet"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": ""
+    },
+    {
+      "key": "name",
+      "value": ""
+    },
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}
