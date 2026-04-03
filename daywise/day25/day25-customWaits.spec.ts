@@ -1,4 +1,4 @@
-import { test } from "../../playwrightt/node_modules/@playwright/test"
+import { test } from "@playwright/test"
 
 test("Custom Waits", async ({ page }) => {
   await page.goto("https://www.amazon.in");
